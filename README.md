@@ -31,6 +31,9 @@ file haar cascadenya tinggal dipake yang frontal face.xml ada di dlm folder Haar
 
 selanjutnya fitur paling utamanya 
 deteksi wajah juga cuma ditambahin model VGG-19
+
+ini modelnya sudah di training tinggal dipakai https://drive.google.com/file/d/1gHSkEZxN-VdixuyrK-To13R3xo5-BB2L/view?usp=sharing
+
 bertujuan uttuk deteksi wajah dengan akurasi lebih tinggi 
 karena sdh menggunakan training data pengguna masker 
 
