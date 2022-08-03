@@ -6,7 +6,7 @@ project ini dasarnya python
 source code dasarnya dah ada di folder jupyter,
 nah dibikin user interface pake framework Streamlit
 
-#######################################################
+##############################################################################
 untuk objektifnya nanti ada beberapa fitur 
 
 fitur pertama itu buat nampilin datasetnya 
