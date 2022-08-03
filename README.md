@@ -1,13 +1,12 @@
 # face-mask-detection
 
-jadi bgni mas hehe
-
+jadi bgni mas hehe,
 project ini dasarnya python
 
-source code dasarnya dah ada di folder jupyter 
-
+source code dasarnya dah ada di folder jupyter,
 nah dibikin user interface pake framework Streamlit
 
+#################################################
 untuk objektifnya nanti ada beberapa fitur 
 
 fitur pertama itu buat nampilin datasetnya 
@@ -19,12 +18,14 @@ ini linknya https://www.kaggle.com/datasets/ashishjangra27/face-mask-12k-images-
 nanti ditampilin total file dlm datasetnya
 & sampel random aja kyk yg di jupyter notebook
 
-selanjutnya 2 fitur utama 
-pertama deteksi wajah manusia pake metode haar cascade
+#######################################################
+
+selanjutnya fitur utama 
+Deteksi wajah manusia pake metode Haar Cascade
 
 outputnya 3 yaitu nampilin gambar originalnya 
 terus di proses pake open cv jadi terdeteksi wajahnya 
-file haar cascadenya tinggal dipake yang frontal face.xml ada di dlm folder
+file haar cascadenya tinggal dipake yang frontal face.xml ada di dlm folder Haar Cascade
 
 
 selanjutnya fitur paling utamanya 
@@ -35,6 +36,8 @@ karena sdh menggunakan training data pengguna masker
 outputnya juga sama 3 yaitu nampilin gambar original
 terus di proses pake opencv dgn tambahan model VGG-19
 jadi terdeteksi wajah manusianya dan bisa dibedakan dia menggunakan masker atau tidak
+
+####################################################
 
 nah yang terakhir data akurasinya 
 nanti ada 3 
