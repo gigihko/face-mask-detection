@@ -26,7 +26,7 @@ Deteksi wajah manusia pake metode Haar Cascade
 
 outputnya 3 yaitu nampilin gambar originalnya 
 terus di proses pake open cv jadi terdeteksi wajahnya 
-file haar cascadenya tinggal dipake yang frontal face.xml ada di dlm folder Haar Cascade
+file haar cascadenya tinggal dipake yang frontal face.xml ada di dlm folder Haar Cascade https://github.com/gigihko/face-mask-detection/blob/main/haarcascades/haarcascade_frontalface_default.xml
 
 
 selanjutnya fitur paling utamanya 
