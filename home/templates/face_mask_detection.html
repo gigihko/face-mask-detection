@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-5">
+                <div class="col-12">
+                    <h1 class="text-center"><b>
+                            Face Mask Detection App
+                        </b></h1>
+                    <h6 class="text-center mt-2">Build with Django, OpenCV and VGG-19</h6>
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="container-fluid">
+                        <div class="mb-3">
+                            <form action="predictImage" id="fileupload" method="post" enctype="multipart/form-data">
+                                {% csrf_token %}
+                                <!-- <label for="formFile" class="form-label">Default file input example</label> -->
+                                <div class="col-md-4 col-sm-4"><label for="fname">Upload Image File Here:</label>
+                                </div> <input name="filePath" type="file"><br><br>
+                                <br>
+                                <!-- <input type="file" name="original" style="display: none;" value="{{ file_url }}"> -->
+                                <button type="submit" class="btn btn-primary" value="submit">Predict</button>
+                            </form>
+                            <!-- <button type="submit"  style="float: right;" class="btn btn-primary mb-3">Browse Files</button> -->
+                        </div>
+                    </div>
+                    <h6 class="my-4">Original Image</h6>
+                    <div class="row">
+                        <img src="{{filePathName}}" alt ='imagename'>
+
+
+                    </div>
+                    <h6 class="my-4">face mask detection Image</h6>
+                    <div class="row">
+                        <img src="/media/detection.png" alt =''>
+                    </div>
+                    <!-- <h2>The Classification of the image is : {{ mask_result }} </h2> -->
+                </div>
+            </div>
+        </div>
+    </div><!-- /.container-fluid -->
+</div>
+<!-- /.content-header -->
+
+<!-- Main content -->
+<section class="content">
+    <div class="container-fluid">
+        <!-- Main row -->
+        <!-- /.row (main row) -->
+    </div><!-- /.container-fluid -->
+</section>
+<!-- /.content -->
+</div>
+<script>
+    $('#fileupload').submit(function (evnt) {
+        if ($('#name').val().length <= 0) {
+            $('#name').attr('style', 'border-color:red');
+            evnt.preventDefault();
+        }
+        if ($('#content').val().length <= 0) {
+            $('#content').attr('style', 'border-color:red');
+            evnt.preventDefault();
+        }
+    });
+
+</script>
+{% endblock %}
